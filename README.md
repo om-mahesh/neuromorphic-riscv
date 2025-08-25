@@ -3,7 +3,7 @@
 
 > **TL;DR**: This project implements a complete single‑cycle RISC‑V processor (control, datapath, ALU, IMEM/DMEM) plus a **Neuromorphic Adaptive Dynamic Precision Scaling (ADPS)** controller. The ADPS block observes instruction/operand activity and selectively switches ALU precision modes (1×64, 2×32, 4×16 slices) with hysteresis & refractory logic to reduce energy with minimal performance impact.
 
-![Block Diagram](ADPS WITH RISC_V (1)_page-0001 .jpg)
+![Block Diagram](ADPS WITH RISC_V (1)_page-0001 (1).jpg)
 
 ---
 
