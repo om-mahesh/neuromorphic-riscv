@@ -1,0 +1,288 @@
+// Comprehensive ADPS Test Instructions for RISC-V Processor
+// Designed to rigorously test bio-inspired neuronal adaptation mechanisms
+// Format: 32-bit hex machine code (one instruction per line)
+//
+// Test Phases:
+// 1. Small Operands (Hyperpolarization Test)
+// 2. Large Operands (Depolarization Test) 
+// 3. High Variance Sequence (Neuroplasticity Test)
+// 4. Arithmetic Progression (Gradual Adaptation Test)
+// 5. Branch/Control Flow (State Persistence Test)
+// 6. Load/Store Operations (Memory Precision Test)
+// 7. Shift Operations (Bit-level Precision Test)
+// 8. Mixed Computational Patterns (Real-world Simulation)
+// 9. Stress Test (Rapid State Changes)
+// 10. Stabilization Test (Refractory Period Verification)
+
+// =============================================================================
+// PHASE 1: SMALL OPERAND HYPERPOLARIZATION TEST (16-bit precision expected)
+// Purpose: Test energy-saving neuronal state with minimal computational demands
+// =============================================================================
+
+00100093  // addi x1, x0, 1      - Load minimal value (1)
+00200113  // addi x2, x0, 2      - Load small value (2)
+00300193  // addi x3, x0, 3      - Load small value (3)
+00400213  // addi x4, x0, 4      - Load small value (4)
+00500293  // addi x5, x0, 5      - Load small value (5)
+
+// Small arithmetic operations (should maintain hyperpolarized state)
+002081B3  // add x3, x1, x2      - 1 + 2 = 3 (small result)
+00410233  // add x4, x2, x4      - 2 + 4 = 6 (small result)
+005282B3  // add x5, x5, x5      - 5 + 5 = 10 (small result)
+40210233  // sub x4, x2, x2      - 2 - 2 = 0 (minimal result)
+001101B3  // add x3, x2, x1      - 2 + 1 = 3 (small result)
+
+// Small logical operations
+0020F233  // and x4, x1, x2      - 1 & 2 = 0 (small result)
+0020E2B3  // or x5, x1, x2       - 1 | 2 = 3 (small result)  
+0020C333  // xor x6, x1, x2      - 1 ^ 2 = 3 (small result)
+
+// Small comparison operations
+0020A3B3  // slt x7, x1, x2      - 1 < 2 = 1 (boolean result)
+0020B433  // sltu x8, x1, x2     - 1 < 2 = 1 (unsigned boolean)
+
+// =============================================================================
+// PHASE 2: LARGE OPERAND DEPOLARIZATION TEST (64-bit precision expected)
+// Purpose: Test high-accuracy neuronal state with maximum computational demands
+// =============================================================================
+
+FFFFF4B7  // lui x9, 0xFFFFF     - Load large immediate (0xFFFFF000)
+ABCDE537  // lui x10, 0xABCDE    - Load large immediate (0xABCDE000)
+DEADC5B7  // lui x11, 0xDEADC    - Load large immediate (0xDEADC000)
+BEEF0637  // lui x12, 0xBEEF0    - Load large immediate (0xBEEF0000)
+12345637  // lui x12, 0x12345    - Load large immediate (0x12345000)
+
+// Large arithmetic operations (should trigger depolarized state)
+00A486B3  // add x13, x9, x10    - Large + Large (high magnitude)
+40B48733  // sub x14, x9, x11    - Large - Large (high magnitude)
+00C587B3  // add x15, x11, x12   - Large + Large (high magnitude)
+40C58833  // sub x16, x11, x12   - Large - Large (high magnitude)
+00D608B3  // add x17, x12, x13   - Large + Large (overflow potential)
+
+// Large logical operations (maintain high precision)
+00A4F933  // and x18, x9, x10    - Large & Large
+00A4E9B3  // or x19, x9, x10     - Large | Large
+00A4CA33  // xor x20, x9, x10    - Large ^ Large
+
+// Large comparison operations
+00A4AAB3  // slt x21, x9, x10    - Large comparison
+00A4BB33  // sltu x22, x9, x10   - Large unsigned comparison
+
+// =============================================================================
+// PHASE 3: HIGH VARIANCE NEUROPLASTICITY TEST (frequent switching expected)
+// Purpose: Test adaptive capability with rapidly changing computational demands
+// =============================================================================
+
+00100093  // addi x1, x0, 1      - Tiny value (hyperpolarization trigger)
+FFFFF137  // lui x2, 0xFFFFF     - Huge value (depolarization trigger)
+002081B3  // add x3, x1, x2      - Tiny + Huge (variance spike)
+00100213  // addi x4, x0, 1      - Back to tiny (state change)
+00400293  // addi x5, x0, 4      - Small value (hyperpolarized)
+ABCDE337  // lui x6, 0xABCDE     - Large value (depolarized)
+006282B3  // add x5, x5, x6      - Small + Large (high variance)
+00100393  // addi x7, x0, 1      - Tiny again (adaptation test)
+007383B3  // add x7, x7, x7      - 1 + 1 = 2 (small)
+007383B3  // add x7, x7, x7      - 2 + 2 = 4 (small)
+007383B3  // add x7, x7, x7      - 4 + 4 = 8 (small)
+DEADC437  // lui x8, 0xDEADC     - Large again (variance)
+008383B3  // add x7, x7, x8      - Small + Large (mixed)
+
+// =============================================================================
+// PHASE 4: ARITHMETIC PROGRESSION TEST (gradual adaptation)
+// Purpose: Test gradual neuronal state transitions with growing operands
+// =============================================================================
+
+00200093  // addi x1, x0, 2      - Start with 2
+001080B3  // add x1, x1, x1      - 2 + 2 = 4
+001080B3  // add x1, x1, x1      - 4 + 4 = 8  
+001080B3  // add x1, x1, x1      - 8 + 8 = 16
+001080B3  // add x1, x1, x1      - 16 + 16 = 32
+001080B3  // add x1, x1, x1      - 32 + 32 = 64
+001080B3  // add x1, x1, x1      - 64 + 64 = 128
+001080B3  // add x1, x1, x1      - 128 + 128 = 256
+001080B3  // add x1, x1, x1      - 256 + 256 = 512
+001080B3  // add x1, x1, x1      - 512 + 512 = 1024 (getting larger)
+001080B3  // add x1, x1, x1      - 1024 + 1024 = 2048
+001080B3  // add x1, x1, x1      - 2048 + 2048 = 4096
+001080B3  // add x1, x1, x1      - 4096 + 4096 = 8192
+001080B3  // add x1, x1, x1      - 8192 + 8192 = 16384
+001080B3  // add x1, x1, x1      - 16384 + 16384 = 32768 (should trigger 32-bit)
+001080B3  // add x1, x1, x1      - 32768 + 32768 = 65536 (should trigger 64-bit)
+
+// =============================================================================
+// PHASE 5: SHIFT OPERATIONS TEST (bit-level precision evaluation)
+// Purpose: Test precision adaptation with shift-based operations
+// =============================================================================
+
+01000093  // addi x1, x0, 16     - Load base value
+00109093  // slli x1, x1, 1      - Left shift: 16 << 1 = 32
+00109093  // slli x1, x1, 1      - Left shift: 32 << 1 = 64
+00109093  // slli x1, x1, 1      - Left shift: 64 << 1 = 128
+00109093  // slli x1, x1, 1      - Left shift: 128 << 1 = 256
+00109093  // slli x1, x1, 1      - Left shift: 256 << 1 = 512
+00109093  // slli x1, x1, 1      - Left shift: 512 << 1 = 1024
+00109093  // slli x1, x1, 1      - Left shift: 1024 << 1 = 2048
+00109093  // slli x1, x1, 1      - Left shift: 2048 << 1 = 4096
+00109093  // slli x1, x1, 1      - Left shift: 4096 << 1 = 8192
+00109093  // slli x1, x1, 1      - Left shift: 8192 << 1 = 16384
+00109093  // slli x1, x1, 1      - Left shift: 16384 << 1 = 32768
+00109093  // slli x1, x1, 1      - Left shift: 32768 << 1 = 65536 (large)
+
+// Right shifts (reducing magnitude)
+0010D093  // srli x1, x1, 1      - Right shift: 65536 >> 1 = 32768
+0010D093  // srli x1, x1, 1      - Right shift: 32768 >> 1 = 16384
+0010D093  // srli x1, x1, 1      - Right shift: 16384 >> 1 = 8192
+0010D093  // srli x1, x1, 1      - Right shift: 8192 >> 1 = 4096
+0020D093  // srli x1, x1, 2      - Right shift: 4096 >> 2 = 1024
+0040D093  // srli x1, x1, 4      - Right shift: 1024 >> 4 = 64
+0030D093  // srli x1, x1, 3      - Right shift: 64 >> 3 = 8 (back to small)
+
+// =============================================================================
+// PHASE 6: BRANCH AND CONTROL FLOW TEST (state persistence)
+// Purpose: Test neuronal state maintenance across control flow changes
+// =============================================================================
+
+00100093  // addi x1, x0, 1      - Small value for comparison
+00200113  // addi x2, x0, 2      - Small value for comparison
+00208463  // beq x1, x2, +8      - Branch not taken (1 != 2)
+00300193  // addi x3, x0, 3      - This executes (small arithmetic)
+002081B3  // add x3, x1, x2      - Small addition (1 + 2 = 3)
+00108463  // beq x1, x1, +8      - Branch taken (1 == 1)
+FFFFF1B7  // lui x3, 0xFFFFF     - This gets skipped
+00400213  // addi x4, x0, 4      - Landing target (small value)
+
+// Jump test
+010000EF  // jal x1, +16         - Jump forward, save return address
+DEADC2B7  // lui x5, 0xDEADC     - This gets skipped
+BEEF0337  // lui x6, x0xBEEF0    - This gets skipped  
+00500293  // addi x5, x0, 5      - Landing target (small value)
+000080E7  // jalr x1, x1, 0      - Return jump
+
+// =============================================================================
+// PHASE 7: LOAD/STORE OPERATIONS TEST (memory precision evaluation)
+// Purpose: Test precision adaptation during memory operations
+// =============================================================================
+
+00A00093  // addi x1, x0, 10     - Small address offset
+01400113  // addi x2, x0, 20     - Small data value
+0020A023  // sw x2, 0(x1)        - Store small value
+0000A183  // lw x3, 0(x1)        - Load small value
+
+FFFFF1B7  // lui x3, 0xFFFFF     - Large address base
+01C18193  // addi x3, x3, 28     - Large address
+ABCDE237  // lui x4, 0xABCDE     - Large data value  
+0041A023  // sw x4, 0(x3)        - Store large value
+0001A283  // lw x5, 0(x3)        - Load large value
+
+// =============================================================================
+// PHASE 8: MIXED COMPUTATIONAL PATTERNS (real-world simulation)
+// Purpose: Simulate realistic computational workloads with mixed precision needs
+// =============================================================================
+
+// Simulate array indexing with small indices
+00100093  // addi x1, x0, 1      - Array index (small)
+00200113  // addi x2, x0, 2      - Array index (small)
+00400193  // addi x3, x0, 4      - Element size (small)
+003080B3  // add x1, x1, x3      - Calculate offset (small)
+00310133  // add x2, x2, x3      - Calculate offset (small)
+
+// Simulate large data processing
+DEADC1B7  // lui x3, 0xDEADC     - Large data chunk
+BEEF0237  // lui x4, 0xBEEF0     - Large data chunk
+004181B3  // add x3, x3, x4      - Large data operation
+12345237  // lui x4, 0x12345     - Another large chunk
+004181B3  // add x3, x3, x4      - Accumulate large result
+
+// Simulate loop counter (gradual growth)
+00100093  // addi x1, x0, 1      - Loop counter = 1
+00108093  // addi x1, x1, 1      - counter++  (= 2)
+00108093  // addi x1, x1, 1      - counter++  (= 3)
+00108093  // addi x1, x1, 1      - counter++  (= 4)
+00508093  // addi x1, x1, 5      - counter += 5  (= 9)
+00A08093  // addi x1, x1, 10     - counter += 10 (= 19)
+06408093  // addi x1, x1, 100    - counter += 100 (= 119)
+3E808093  // addi x1, x1, 1000   - counter += 1000 (= 1119)
+
+// =============================================================================
+// PHASE 9: STRESS TEST (rapid state changes)
+// Purpose: Test refractory period and stabilization mechanisms
+// =============================================================================
+
+00100093  // addi x1, x0, 1      - Small (16-bit trigger)
+FFFFF137  // lui x2, 0xFFFFF     - Large (64-bit trigger)
+00100193  // addi x3, x0, 1      - Small (16-bit trigger)  
+ABCDE237  // lui x4, 0xABCDE     - Large (64-bit trigger)
+00100293  // addi x5, x0, 1      - Small (16-bit trigger)
+DEADC337  // lui x6, 0xDEADC     - Large (64-bit trigger)
+00100393  // addi x7, x0, 1      - Small (16-bit trigger)
+BEEF0437  // lui x8, 0xBEEF0     - Large (64-bit trigger)
+00100413  // addi x8, x0, 1      - Small (16-bit trigger)
+87654437  // lui x8, 0x87654     - Large (64-bit trigger)
+
+// Rapid arithmetic with alternating magnitudes
+002080B3  // add x1, x1, x2      - Small + Large
+00318133  // add x2, x3, x3      - Small + Small
+004201B3  // add x3, x4, x4      - Large + Large
+00528233  // add x4, x5, x5      - Small + Small
+006302B3  // add x5, x6, x6      - Large + Large
+
+// =============================================================================
+// PHASE 10: STABILIZATION AND REFRACTORY PERIOD TEST
+// Purpose: Verify proper refractory period implementation
+// =============================================================================
+
+FFFFF0B7  // lui x1, 0xFFFFF     - Trigger depolarization
+00000013  // nop                 - Wait (refractory period)
+00000013  // nop                 - Wait (refractory period)
+00000013  // nop                 - Wait (refractory period)  
+00000013  // nop                 - Wait (refractory period)
+00100113  // addi x2, x0, 1      - Small value (should trigger after refractory)
+00000013  // nop                 - Wait (refractory period)
+00000013  // nop                 - Wait (refractory period)
+00000013  // nop                 - Wait (refractory period)
+00000013  // nop                 - Wait (refractory period)
+
+// =============================================================================
+// PHASE 11: FINAL COMPREHENSIVE MIXED TEST
+// Purpose: Final validation with realistic mixed computational patterns
+// =============================================================================
+
+// Simulate complex algorithm with mixed precision needs
+00A00093  // addi x1, x0, 10     - Small constant
+12345137  // lui x2, 0x12345     - Large coefficient
+002080B3  // add x1, x1, x2      - Mix small + large
+01400193  // addi x3, x0, 20     - Small multiplier
+003080B3  // add x1, x1, x3      - Add small value
+ABCDE237  // lui x4, 0xABCDE     - Large data value
+004080B3  // add x1, x1, x4      - Add large value
+00508093  // addi x1, x1, 5      - Fine-tune with small
+40408133  // sub x2, x1, x4      - Subtract large from result
+002081B3  // add x3, x1, x2      - Combine results
+00318193  // add x3, x3, x3      - Double the result
+
+// End with graceful small operations (return to resting state)
+00100093  // addi x1, x0, 1      - Small value
+00200113  // addi x2, x0, 2      - Small value
+002081B3  // add x3, x1, x2      - Small addition
+00000013  // nop                 - End padding
+00000013  // nop                 - End padding  
+00000013  // nop                 - End padding
+00000013  // nop                 - End padding
+
+// =============================================================================
+// END OF COMPREHENSIVE ADPS TEST SEQUENCE
+// Total Instructions: ~150
+// Expected Behavior:
+// - Phase 1: Should maintain 16-bit precision (hyperpolarized)
+// - Phase 2: Should switch to 64-bit precision (depolarized)  
+// - Phase 3: Should show frequent precision switching (neuroplasticity)
+// - Phase 4: Should show gradual transitions as operands grow
+// - Phase 5-11: Should demonstrate adaptive behavior based on computational demands
+// 
+// Success Criteria:
+// - Multiple precision switches observed
+// - Cost function varying with operand magnitude
+// - Stabilization periods preventing oscillation
+// - Energy-efficient operation for small operands
+// - High-accuracy operation for large operands
+// =============================================================================

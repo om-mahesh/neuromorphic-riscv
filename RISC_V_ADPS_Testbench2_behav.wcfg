@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="RISC_V_ADPS_Testbench2_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="RISC_V_ADPS_Testbench2" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="220.120 ns"></ZoomStartTime>
+      <ZoomEndTime time="255.061 ns"></ZoomEndTime>
+      <Cursor1Time time="228.460 ns"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="240"></NameColumnWidth>
+      <ValueColumnWidth column_width="254"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="45" />
+   <wvobject fp_name="/RISC_V_ADPS_Testbench2/clk" type="logic">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC_V_ADPS_Testbench2/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC_V_ADPS_Testbench2/WriteData" type="array">
+      <obj_property name="ElementShortName">WriteData[31:0]</obj_property>
+      <obj_property name="ObjectShortName">WriteData[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC_V_ADPS_Testbench2/DataAddr" type="array">
+      <obj_property name="ElementShortName">DataAddr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DataAddr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC_V_ADPS_Testbench2/MemWrite" type="logic">
+      <obj_property name="ElementShortName">MemWrite</obj_property>
+      <obj_property name="ObjectShortName">MemWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC_V_ADPS_Testbench2/PC" type="array">
+      <obj_property name="ElementShortName">PC[31:0]</obj_property>
+      <obj_property name="ObjectShortName">PC[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC_V_ADPS_Testbench2/Instr" type="array">
+      <obj_property name="ElementShortName">Instr[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Instr[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC_V_ADPS_Testbench2/ALUResult" type="array">
+      <obj_property name="ElementShortName">ALUResult[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ALUResult[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC_V_ADPS_Testbench2/Zero" type="logic">
+      <obj_property name="ElementShortName">Zero</obj_property>
+      <obj_property name="ObjectShortName">Zero</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC_V_ADPS_Testbench2/SrcA" type="array">
+      <obj_property name="ElementShortName">SrcA[31:0]</obj_property>
+      <obj_property name="ObjectShortName">SrcA[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC_V_ADPS_Testbench2/SrcB" type="array">
+      <obj_property name="ElementShortName">SrcB[31:0]</obj_property>
+      <obj_property name="ObjectShortName">SrcB[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC_V_ADPS_Testbench2/adps_precision" type="array">
+      <obj_property name="ElementShortName">adps_precision[1:0]</obj_property>
+      <obj_property name="ObjectShortName">adps_precision[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC_V_ADPS_Testbench2/adps_precision_changed" type="logic">
+      <obj_property name="ElementShortName">adps_precision_changed</obj_property>
+      <obj_property name="ObjectShortName">adps_precision_changed</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC_V_ADPS_Testbench2/adps_switches_count" type="array">
+      <obj_property name="ElementShortName">adps_switches_count[15:0]</obj_property>
+      <obj_property name="ObjectShortName">adps_switches_count[15:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC_V_ADPS_Testbench2/adps_cost_function" type="array">
+      <obj_property name="ElementShortName">adps_cost_function[31:0]</obj_property>
+      <obj_property name="ObjectShortName">adps_cost_function[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC_V_ADPS_Testbench2/magnitude_metric" type="array">
+      <obj_property name="ElementShortName">magnitude_metric[31:0]</obj_property>
+      <obj_property name="ObjectShortName">magnitude_metric[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC_V_ADPS_Testbench2/variance_metric" type="array">
+      <obj_property name="ElementShortName">variance_metric[31:0]</obj_property>
+      <obj_property name="ObjectShortName">variance_metric[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC_V_ADPS_Testbench2/denormal_metric" type="array">
+      <obj_property name="ElementShortName">denormal_metric[31:0]</obj_property>
+      <obj_property name="ObjectShortName">denormal_metric[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC_V_ADPS_Testbench2/precision_stable" type="logic">
+      <obj_property name="ElementShortName">precision_stable</obj_property>
+      <obj_property name="ObjectShortName">precision_stable</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC_V_ADPS_Testbench2/stabilization_counter" type="array">
+      <obj_property name="ElementShortName">stabilization_counter[3:0]</obj_property>
+      <obj_property name="ObjectShortName">stabilization_counter[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC_V_ADPS_Testbench2/current_precision_used" type="array">
+      <obj_property name="ElementShortName">current_precision_used[1:0]</obj_property>
+      <obj_property name="ObjectShortName">current_precision_used[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC_V_ADPS_Testbench2/previous_precision_used" type="array">
+      <obj_property name="ElementShortName">previous_precision_used[1:0]</obj_property>
+      <obj_property name="ObjectShortName">previous_precision_used[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC_V_ADPS_Testbench2/precision_changed_flag" type="logic">
+      <obj_property name="ElementShortName">precision_changed_flag</obj_property>
+      <obj_property name="ObjectShortName">precision_changed_flag</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC_V_ADPS_Testbench2/fp16_operations_count" type="array">
+      <obj_property name="ElementShortName">fp16_operations_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">fp16_operations_count[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC_V_ADPS_Testbench2/fp32_operations_count" type="array">
+      <obj_property name="ElementShortName">fp32_operations_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">fp32_operations_count[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC_V_ADPS_Testbench2/fp64_operations_count" type="array">
+      <obj_property name="ElementShortName">fp64_operations_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">fp64_operations_count[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC_V_ADPS_Testbench2/current_input_A" type="array">
+      <obj_property name="ElementShortName">current_input_A[31:0]</obj_property>
+      <obj_property name="ObjectShortName">current_input_A[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC_V_ADPS_Testbench2/current_input_B" type="array">
+      <obj_property name="ElementShortName">current_input_B[31:0]</obj_property>
+      <obj_property name="ObjectShortName">current_input_B[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC_V_ADPS_Testbench2/precision_state_name" type="array">
+      <obj_property name="ElementShortName">precision_state_name[159:0]</obj_property>
+      <obj_property name="ObjectShortName">precision_state_name[159:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC_V_ADPS_Testbench2/cycle_count" type="array">
+      <obj_property name="ElementShortName">cycle_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">cycle_count[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC_V_ADPS_Testbench2/valid_instruction_count" type="array">
+      <obj_property name="ElementShortName">valid_instruction_count[31:0]</obj_property>
+      <obj_property name="ObjectShortName">valid_instruction_count[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC_V_ADPS_Testbench2/hyperpolarized_cycles" type="array">
+      <obj_property name="ElementShortName">hyperpolarized_cycles[31:0]</obj_property>
+      <obj_property name="ObjectShortName">hyperpolarized_cycles[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC_V_ADPS_Testbench2/resting_cycles" type="array">
+      <obj_property name="ElementShortName">resting_cycles[31:0]</obj_property>
+      <obj_property name="ObjectShortName">resting_cycles[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC_V_ADPS_Testbench2/depolarized_cycles" type="array">
+      <obj_property name="ElementShortName">depolarized_cycles[31:0]</obj_property>
+      <obj_property name="ObjectShortName">depolarized_cycles[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC_V_ADPS_Testbench2/total_adaptations" type="array">
+      <obj_property name="ElementShortName">total_adaptations[31:0]</obj_property>
+      <obj_property name="ObjectShortName">total_adaptations[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC_V_ADPS_Testbench2/max_cost_observed" type="array">
+      <obj_property name="ElementShortName">max_cost_observed[31:0]</obj_property>
+      <obj_property name="ObjectShortName">max_cost_observed[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC_V_ADPS_Testbench2/min_cost_observed" type="array">
+      <obj_property name="ElementShortName">min_cost_observed[31:0]</obj_property>
+      <obj_property name="ObjectShortName">min_cost_observed[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC_V_ADPS_Testbench2/small_operand_detections" type="array">
+      <obj_property name="ElementShortName">small_operand_detections[31:0]</obj_property>
+      <obj_property name="ObjectShortName">small_operand_detections[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC_V_ADPS_Testbench2/large_operand_detections" type="array">
+      <obj_property name="ElementShortName">large_operand_detections[31:0]</obj_property>
+      <obj_property name="ObjectShortName">large_operand_detections[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC_V_ADPS_Testbench2/stabilization_periods" type="array">
+      <obj_property name="ElementShortName">stabilization_periods[31:0]</obj_property>
+      <obj_property name="ObjectShortName">stabilization_periods[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC_V_ADPS_Testbench2/total_energy_consumed_x10" type="array">
+      <obj_property name="ElementShortName">total_energy_consumed_x10[31:0]</obj_property>
+      <obj_property name="ObjectShortName">total_energy_consumed_x10[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC_V_ADPS_Testbench2/baseline_energy" type="array">
+      <obj_property name="ElementShortName">baseline_energy[31:0]</obj_property>
+      <obj_property name="ObjectShortName">baseline_energy[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC_V_ADPS_Testbench2/CLK_PERIOD" type="array">
+      <obj_property name="ElementShortName">CLK_PERIOD[31:0]</obj_property>
+      <obj_property name="ObjectShortName">CLK_PERIOD[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC_V_ADPS_Testbench2/SIMULATION_CYCLES" type="array">
+      <obj_property name="ElementShortName">SIMULATION_CYCLES[31:0]</obj_property>
+      <obj_property name="ObjectShortName">SIMULATION_CYCLES[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RISC_V_ADPS_Testbench2/REPORT_INTERVAL" type="array">
+      <obj_property name="ElementShortName">REPORT_INTERVAL[31:0]</obj_property>
+      <obj_property name="ObjectShortName">REPORT_INTERVAL[31:0]</obj_property>
+   </wvobject>
+</wave_config>
