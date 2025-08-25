@@ -286,20 +286,6 @@ Choose one and add a `LICENSE` file (MIT/BSD‑3‑Clause/Apache‑2.0).
 
 ---
 
-## Citation
-If you use this project in academic work, please cite (update authors/venue):
-```bibtex
-@inproceedings{neuromorphic_adps_riscv,
-  title   = {Neuromorphic Adaptive-Precision RISC-V Processor with Neuronal State Management},
-  author  = {<Your Name> and <Coauthors>},
-  booktitle = {<Conference/Journal>},
-  year    = {2025},
-  note    = {URL: <repo or project page>}
-}
-```
-
----
-
 ## Acknowledgements
 - RISC‑V community and open‑source RTL projects for inspiration.
 - Digilent Zybo Z7‑10 reference designs and documentation.
