@@ -1,6 +1,6 @@
 <p align="center">
   <!-- Put your final logo at: docs/figs/logo.png -->
-  <img src="logo.png" width="180" alt="SYNAPSE logo">
+  <img src="logo.png" width="300" alt="SYNAPSE logo">
 </p>
 
 <h1 align="center">SYNAPSE</h1>
@@ -23,7 +23,7 @@
 
 <p align="center">
   <!-- Put your architecture diagram here -->
-  <img src="docs/figs/architecture.png" width="800" alt="Architecture">
+  <img src="architecture.png" width="800" alt="Architecture">
 </p>
 
 ---
